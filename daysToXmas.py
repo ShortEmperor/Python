@@ -10,14 +10,14 @@ class xmastree:
 			 print((self.size-i)*" ",i*" *")
 		for i in range(0,self.trunk):
 			 print (self.size*" ","*")
- 
+
 atree=xmastree(15,3)
 
 
 
 
 def Main():
-    days_left = str(datetime.datetime(2020, 12, 24) - datetime.datetime.now()).split()
+    days_left = str(datetime.datetime(datetime.datetime.now().year, 12, 24) - datetime.datetime.now()).split()
 
     if days_left[0] == '0:00:00':
         print('Merry Xmas!')
